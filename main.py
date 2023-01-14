@@ -1,7 +1,7 @@
 import discord
 import json
 import random
-
+import config
 
 
 class MyClient(discord.Client):
@@ -52,4 +52,4 @@ intents.message_content = True
 
 
 client = MyClient(intents=intents)
-client.run('MTA1OTkwODE5Mjg2MTE2Nzc2OA.G4b8Py.LJtXHEO8XHulc3-POUmErFsCxxsQdbuQCH9Vd8')
+client.run(config.TOKEN)
